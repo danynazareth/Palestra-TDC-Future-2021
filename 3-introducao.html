@@ -1,45 +1,30 @@
 <!DOCTYPE html>
 <html>
-<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
-<body>
- 
-  <a-scene>
-     <a-assets>
-       
 
-        <img id="entrada"src="/assets/panorama-sky.jpg">
-        <img id="logo" src="/assets/tdc-future-logo.png">
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
+  <script src="https://unpkg.com/three@0.95.0/examples/js/libs/inflate.min.js"></script>
 
 
-        <img id="logo" src="/assets/logo-tdc.png"> 
-        
-        <img id="proximo" src="https://cdn.glitch.me/0addd6c2-fe5c-4f30-b460-c078d6797588%2Fprevious.png?v=1634167737578"> 
+  <body>
 
-        <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
-<script src="https://unpkg.com/three@0.95.0/examples/js/libs/inflate.min.js"></script>
-
-        <!-- <img id="anterior" src="https://cdn.glitch.me/0addd6c2-fe5c-4f30-b460-c078d6797588%2Fnext.png?v=1634167737578">
-        <img id="proximo" src="https://cdn.glitch.me/0addd6c2-fe5c-4f30-b460-c078d6797588%2Fprevious.png?v=1634167737578"> -->
-
+    <a-scene>
+      <a-assets>
+          <img id="entrada"src="/assets/panorama-sky.jpg">
+          <img id="proximo" src="/assets/proximo.png"> 
       </a-assets>
 
+      <a-sky src="#entrada" rotation="0 -90 0"></a-sky>
+      <a-entity animation-mixer="" scale="0.08 0.08 0.08" position="18.86785 -0.45125 -0.69425" fbx-model="src: /assets/3d/kgirls/source/kgirls01.fbx" rotation="-90 -45 2.58"></a-entity>
+      <a-entity animation-mixer="" scale="2 2 2" position="-1.8042 3.0759 17.48537" fbx-model="src: /assets/3d/meal-japanese/source/udon_meal.fbx" rotation="61.95 180 -7.15"></a-entity>
+      <a-text value="Computacao Imersiva" position="-2.89674 3.07501 -2.17662" color="#000" scale="1 1 2" text="width: 6.99; height: 6; lineHeight: 1.81" rotation="3.8 7.08 0.28"></a-text>
+      <a-image link="href: 2-bibliografia.html" src="#proximo" position="-82.38007 -16.68 31.013" scale="5.57013 3.46433 0.0001" geometry="height: 5; width: 6" rotation="0 90 0" animation__scale="property: scale; to: 6.57013 3.46433 0.0001; dur: 200; startEvents: mouseenter" animation__scale_reverse="property: scale; to: 5.57013 3.46433 0.00001; dur: 200; startEvents: mouseleave" material=""></a-image>
+      <a-image link="href: 4-atualidades.html" src="#proximo" position="-82.38007 -16.68 -9.96876" scale="5.57013 3.46433 0.0001" geometry="height: 5; width: 6" rotation="0 -90 0" animation__scale="property: scale; to: 6.57013 3.46433 0.0001; dur: 200; startEvents: mouseenter" animation__scale_reverse="property: scale; to: 5.57013 3.46433 0.00001; dur: 200; startEvents: mouseleave" material=""></a-image>
 
-
-
-    <a-sky src="#entrada" rotation="0 -90 0"></a-sky>
-    <a-entity animation-mixer="" scale="0.08 0.08 0.08" position="18.86785 -0.45125 -0.69425" fbx-model="src: /assets/3d/kgirls/source/kgirls01.fbx" rotation="-90 -45 2.58"></a-entity>
-    
-    <a-entity animation-mixer="" scale="2 2 2" position="-1.8042 3.0759 17.48537" fbx-model="src: /assets/3d/meal-japanese/source/udon_meal.fbx" rotation="61.95 180 -7.15"></a-entity>
-    <a-text value="Computacao Imersiva" position="-2.89674 3.07501 -2.17662" color="#000" scale="1 1 2" text="width: 6.99; height: 6; lineHeight: 1.81" rotation="3.8 7.08 0.28"></a-text>
-
-    <a-image link="href: 2-bibliografia.html" src="#proximo" position="-82.38007 -16.68 31.013" scale="5.57013 3.46433 0.0001" geometry="height: 5; width: 6" rotation="0 90 0" animation__scale="property: scale; to: 6.57013 3.46433 0.0001; dur: 200; startEvents: mouseenter" animation__scale_reverse="property: scale; to: 5.57013 3.46433 0.00001; dur: 200; startEvents: mouseleave" material=""></a-image>
-    <a-image link="href: 4-atualidades.html" src="#proximo" position="-82.38007 -16.68 -9.96876" scale="5.57013 3.46433 0.0001" geometry="height: 5; width: 6" rotation="0 -90 0" animation__scale="property: scale; to: 6.57013 3.46433 0.0001; dur: 200; startEvents: mouseenter" animation__scale_reverse="property: scale; to: 5.57013 3.46433 0.00001; dur: 200; startEvents: mouseleave" material=""></a-image>
-
-    <a-camera>
-      <a-cursor></a-cursor>
-    </a-camera>
-  </a-scene>
-</body>
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
 </html>
 

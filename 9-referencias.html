@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html>
-<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
-<body>
- 
-  <a-scene>
-     <a-assets>
-       
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+  <body>
+
+    <a-scene>
+      <a-assets>
 
         <img id="entrada"src="/assets/salao-white.jpeg">
-        <img id="logo" src="/assets/tdc-future-logo.png">
-
-
         <img id="logotdc" src="/assets/logo-tdc.png"> -->
-
-        <img id="anterior" src="https://cdn.glitch.me/0addd6c2-fe5c-4f30-b460-c078d6797588%2Fnext.png?v=1634167737578">
-        <img id="proximo" src="https://cdn.glitch.me/0addd6c2-fe5c-4f30-b460-c078d6797588%2Fprevious.png?v=1634167737578">
+        <img id="proximo" src="/assets/proximo.png"> 
 
       </a-assets>
 
-      <!-- [Immersive Web].WebXR .https://immersiveweb.dev. Acesso em: 7 de novembro  2021 -->
+      
       <a-image link="href: 10-thanks.html" src="#proximo" position="-201.52659 -16.68 -9.96876" scale="5.57013 3.46433 0.0001" geometry="height: 5; width: 6" rotation="0 -90 0" animation__scale="property: scale; to: 6.57013 3.46433 0.0001; dur: 200; startEvents: mouseenter" animation__scale_reverse="property: scale; to: 5.57013 3.46433 0.00001; dur: 200; startEvents: mouseleave" material=""></a-image>
       <a-image link="href: 8-conclusao.html" src="#proximo" position="-201.52659 -16.68 31.013" scale="5.57013 3.46433 0.0001" geometry="height: 5; width: 6" rotation="0 90 0" animation__scale="property: scale; to: 6.57013 3.46433 0.0001; dur: 200; startEvents: mouseenter" animation__scale_reverse="property: scale; to: 5.57013 3.46433 0.00001; dur: 200; startEvents: mouseleave" material=""></a-image>
 
-    <a-sky src="#entrada" rotation="0 -90 0"></a-sky>
-  
+      <a-sky src="#entrada" rotation="0 -90 0"></a-sky>
     
-    <a-text value="Referencias" align="center" baseline="top" position="-3.45066 5.26873 -8.87473" color="#000" scale="4 4 4"  rotation="5 0 0" > </a-text>
       
-    <a-image src="#logotdc" position="12.51728 3.55035 -11.28857" scale="6 5.19 1" material="" geometry="" rotation="0 -17.9 0"></a-image>
+      <a-text value="Referencias" align="center" baseline="top" position="-3.45066 5.26873 -8.87473" color="#000" scale="4 4 4"  rotation="5 0 0" > </a-text>
+        
+      <a-image src="#logotdc" position="12.51728 3.55035 -11.28857" scale="6 5.19 1" material="" geometry="" rotation="0 -17.9 0"></a-image>
 
-    <a-text link="href: https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API" value="Mozilla. Disponivel em:[https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API]. Acesso em 7 de  nov de 2021." position="5.7595 1.42812 6.97884" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation="0 180 0"></a-text>
- 
-    <a-text link="href: https://www.w3.org/TR/webxr" value="W3C. Disponivel em: [https://www.w3.org/TR/webxr/]. Acesso em 7 de  nov de 2021." position="-4.93143 3.27171 1.5774" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation="0 90 0"></a-text>
- 
-    <a-text link="href: https://hackmd.io/@XR/xrbrowsers" value="Hackmd . Disponivel em: [https://hackmd.io/@XR/xrbrowsers]. Acesso em 7 de  nov de 2021.​" position="-3.18782 0.79069 -3.55099" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation=""></a-text>
- 
-    <a-text link="href: https://immersiveweb.dev" value="Imersive Web Dev. Disponivel em: [https://immersiveweb.dev]. Acesso em 7 de  nov de 2021.​" position="-3.46497 1.93453 -7.06456" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation=""></a-text>
-    
-    <a-text link="href: https://rockcontent.com/br/blog/ux-e-ui-design/; on:click" value="Rocket Content. Disponivel em: [https://rockcontent.com/br/blog/ux-e-ui-design/].Acesso em 10 de  nov de 2021​​" position="-0.23085 2.86666 6.41334" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation="0 158.34 0"></a-text>
- 
-    <a-text  link="href: https://inovacaobrain.com.br/ux-e-ui-design; on:click" value="Inovacao Brain: Disponivel em: [https://inovacaobrain.com.br/ux-e-ui-design/]. Acesso em 10  novde 2021" position="8.75945 4.02644 -2.6126" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation="0 -90 0"></a-text>
- 
-    
-    <a-camera>
-      <a-cursor></a-cursor>
-    </a-camera>
-  </a-scene>
-</body>
+      <a-text link="href: https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API" value="Mozilla. Disponivel em:[https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API]. Acesso em 7 de  nov de 2021." position="5.7595 1.42812 6.97884" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation="0 180 0"></a-text>
+  
+      <a-text link="href: https://www.w3.org/TR/webxr" value="W3C. Disponivel em: [https://www.w3.org/TR/webxr/]. Acesso em 7 de  nov de 2021." position="-4.93143 3.27171 1.5774" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation="0 90 0"></a-text>
+  
+      <a-text link="href: https://hackmd.io/@XR/xrbrowsers" value="Hackmd . Disponivel em: [https://hackmd.io/@XR/xrbrowsers]. Acesso em 7 de  nov de 2021.​" position="-3.18782 0.79069 -3.55099" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation=""></a-text>
+  
+      <a-text link="href: https://immersiveweb.dev" value="Imersive Web Dev. Disponivel em: [https://immersiveweb.dev]. Acesso em 7 de  nov de 2021.​" position="-3.46497 1.93453 -7.06456" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation=""></a-text>
+      
+      <a-text link="href: https://rockcontent.com/br/blog/ux-e-ui-design/; on:click" value="Rocket Content. Disponivel em: [https://rockcontent.com/br/blog/ux-e-ui-design/].Acesso em 10 de  nov de 2021​​" position="-0.23085 2.86666 6.41334" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation="0 158.34 0"></a-text>
+  
+      <a-text  link="href: https://inovacaobrain.com.br/ux-e-ui-design; on:click" value="Inovacao Brain: Disponivel em: [https://inovacaobrain.com.br/ux-e-ui-design/]. Acesso em 10  novde 2021" position="8.75945 4.02644 -2.6126" color="#000" scale="2 2 2" text="width: 3.8; tabSize: 3.5" rotation="0 -90 0"></a-text>
+  
+      
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
 </html>
 

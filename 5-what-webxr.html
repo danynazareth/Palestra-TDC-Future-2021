@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html>
 <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
-<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
-<script src="https://unpkg.com/three@0.95.0/examples/js/libs/inflate.min.js"></script>
+
 <body>
  
   <a-scene>
-     <a-assets>
-       
-
+    <a-assets>
         <img id="entrada"src="/assets/evento-salon.jpeg">
-        <img id="logo" src="/assets/tdc-future-logo.png">
-
-
         <img id="logotdc" src="/assets/logo-tdc.png"> 
-        <a-asset-item id="tree" src="/assets/3d/facebook-logo.gltf"></a-asset-item>
-     
-       
-        <img id="anterior" src="https://cdn.glitch.me/0addd6c2-fe5c-4f30-b460-c078d6797588%2Fnext.png?v=1634167737578">
-        <img id="proximo" src="https://cdn.glitch.me/0addd6c2-fe5c-4f30-b460-c078d6797588%2Fprevious.png?v=1634167737578">
+        
+        <img id="proximo" src="/assets/proximo.png"> 
 
       </a-assets>
 
@@ -29,16 +19,17 @@
   
     <a-sky src="#entrada" rotation="0 -90 0"></a-sky>
     <a-text value="WebXR" position="-0.35749 2.35 -2.43452" color="#000" scale="1 1 2" text="width: 6.99; height: 6; lineHeight: 1.81" rotation=""></a-text>
-  <a-text value="A API WebXR
-   fornece acesso aos recursos de 
-  entrada(informacoes de posicionamento do fone de ouvido e controladores) e 
-  saida(Exibicao do hardware) comumente associados aos dispositivos de realidade
-   virtual e realidade aumentada. Ele permite que voce desenvolva e hospede 
-   experiencias VR e AR na web[Immersive Web]​" align="center" 
+    <a-text value="A API WebXR
+    fornece acesso aos recursos de 
+    entrada(informacoes de posicionamento do fone de ouvido e controladores) e 
+    saida(Exibicao do hardware) comumente associados aos dispositivos de realidade
+    virtual e realidade aumentada. Ele permite que voce desenvolva e hospede 
+    experiencias VR e AR na web[Immersive Web]​" align="center" 
     material="color: #01295A" position="4.5136 3.5 0.9124" color="#fff" 
     scale="1.2 1.2 1" text="anchor: center; width: 4.2; alphaTest: 2.15; wrapCount: 39.6" 
     rotation="0 -90 0" geometry="primitive: plane; height: 1.95; width: 4.42"></a-text>
     <a-image link="href: 2_bibliografia.html" src="#logotdc" position="0.15307 3.1187 -2.71107" scale="0.2 0.2 0.0001" material="" geometry="height: 4; width: 4" rotation=""></a-image>
+   
     <a-camera>
       <a-cursor></a-cursor>
     </a-camera>
