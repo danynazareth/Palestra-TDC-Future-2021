@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+<body>
+ 
+  <a-scene>
+     <a-assets>
+       
+
+        <img id="entrada"src="/assets/goodbye.jpeg">
+        <img id="logo" src="/assets/tdc-future-logo.png">
+
+
+        <img id="logotdc" src="/assets/logo-tdc.png"> -->
+
+        <img id="anterior" src="https://cdn.glitch.me/0addd6c2-fe5c-4f30-b460-c078d6797588%2Fnext.png?v=1634167737578">
+        <img id="proximo" src="https://cdn.glitch.me/0addd6c2-fe5c-4f30-b460-c078d6797588%2Fprevious.png?v=1634167737578">
+
+      </a-assets>
+
+
+      <a-image link="href: 9-referencias.html" src="#proximo" position="149.63619 4.123 -8.50316" scale="5.57013 3.46433 0.0001" geometry="height: 5; width: 6" rotation="0 -90 0" animation__scale="property: scale; to: 6.57013 3.46433 0.0001; dur: 200; startEvents: mouseenter" animation__scale_reverse="property: scale; to: 5.57013 3.46433 0.00001; dur: 200; startEvents: mouseleave" material=""></a-image>
+      <a-image link="href: 1-index.html" src="#proximo" position="137.43951 4.12267 25.595" scale="5.57013 3.46433 0.0001" geometry="height: 5; width: 6" rotation="0 90 0" animation__scale="property: scale; to: 6.57013 3.46433 0.0001; dur: 200; startEvents: mouseenter" animation__scale_reverse="property: scale; to: 5.57013 3.46433 0.00001; dur: 200; startEvents: mouseleave" material=""></a-image>
+
+    <a-sky src="#entrada" rotation="0 -90 0"></a-sky>
+    <a-image src="#logo" position="8.95741 3.68035 -8.50316" scale="6 2.05 1" material="" geometry="" rotation="0 -17.9 0"></a-image>
+    <a-text value="Nos Vemos
+    Presencialmente em 2022 
+
+
+    :-D              ;-*                  
+   " align="center" baseline="top" position="-3.45066 5.26873 -8.87473" color="#fff" scale="6 6 6" material="color: rgb(255,255,255)" rotation="5 0 0" text="value: Nos Vemos
+    Presencialmente em 2022 
+
+
+    :-D              ;-*"> </a-text>
+             <!-- <a-text value="Nos Vemos
+              Presencialmente em 2022 
+
+              
+              :-D              ;-*                  
+             " align="center" baseline="top" position="0 1 -8.87473" color="#000" scale="2 2 2" geometry="primitive: plane; width: 5.15; height: 3" material="color: rgb(255,255,255)" rotation="5 0 0" text=""> </a-text>
+              -->
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
+  </a-scene>
+</body>
+</html>
+
